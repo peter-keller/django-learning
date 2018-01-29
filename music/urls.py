@@ -15,4 +15,12 @@ urlpatterns = [
     #/music/album/add/
     path('album/add/', views.AlbumCreate.as_view(), name='album-add'),
 
+
+    path('album/add/<pk>/', views.AlbumUpdate.as_view(), name='album-update'),
+
+
+    path('album/add/<pk>/', views.AlbumDelete.as_view(), name='album-delete'),
+
+    
+
 ]
